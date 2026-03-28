@@ -1,73 +1,126 @@
 import "./styles/Career.css";
 
+const workExperience = [
+  {
+    role: "Associate Software Engineer",
+    company: "Osmosys Software Solutions",
+    timeline: "2024 - NOW",
+    description:
+      "Built invoice APIs and UI workflows, integrated AI chatbot functionality used by 500+ daily users, and delivered 15+ responsive Angular pages that improved UX and reduced support tickets.",
+  },
+  {
+    role: "Web Development Intern",
+    company: "TechBairn",
+    timeline: "2023",
+    description:
+      "Improved a full-stack client application using HTML, CSS, TypeScript, and Bootstrap, contributing to a smoother onboarding flow with 100+ users enrolled in a quarter.",
+  },
+];
+
+const education = [
+  {
+    role: "B.E. Computer Science",
+    company: "KIIT University",
+    timeline: "2020-24",
+    description:
+      "Graduated with GPA 9.20. Core coursework included Data Structures and Algorithms, Operating Systems, and Databases.",
+  },
+  {
+    role: "Intermediate (CBSE)",
+    company: "Atomic Energy Central School No. 4",
+    timeline: "2018-19",
+    description:
+      "Physics, Mathematics, and Computer Science with 81.6%.",
+  },
+  {
+    role: "Class X (CBSE)",
+    company: "Atomic Energy Central School No. 4",
+    timeline: "2016-17",
+    description: "Completed secondary education with CGPA 10.",
+  },
+];
+
+const achievements = [
+  {
+    title: "Quarterly Excellence Award",
+    org: "Osmosys Software Solutions",
+    detail:
+      "Recognized for outstanding contributions to the Temporary Housing Directory (THD) project in Apr-Jun 2025.",
+  },
+  {
+    title: "Letter of Recommendation",
+    org: "KIIT University",
+    detail:
+      "Received a Letter of Recommendation from KIIT University for exceptional work on the KIIT University Society website, resulting in a 60% increase in user engagement and a 40% boost in event registrations.",
+  },
+];
+
 const Career = () => {
   return (
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
+          My journey <span>&</span>
           <br /> experience
         </h2>
-        <div className="career-info">
-          <div className="career-timeline">
-            <div className="career-dot"></div>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+        <div className="career-columns">
+          <div className="career-block">
+            <h3 className="career-block-title">Work Experience</h3>
+            <div className="career-track">
+              <div className="career-timeline">
+                <div className="career-dot"></div>
               </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+              <div className="career-info">
+                {workExperience.map((item, index) => (
+                  <div className="career-info-box" key={`work-${index}`}>
+                    <div className="career-info-in">
+                      <div className="career-role">
+                        <h4>{item.role}</h4>
+                        <h5>{item.company}</h5>
+                      </div>
+                      <h3>{item.timeline}</h3>
+                    </div>
+                    <p>{item.description}</p>
+                  </div>
+                ))}
               </div>
-              <h3>2017–24</h3>
             </div>
-            <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
-            </p>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+          <div className="career-block">
+            <h3 className="career-block-title">Education</h3>
+            <div className="career-track">
+              <div className="career-timeline">
+                <div className="career-dot"></div>
               </div>
-              <h3>2016–17</h3>
+              <div className="career-info">
+                {education.map((item, index) => (
+                  <div className="career-info-box" key={`edu-${index}`}>
+                    <div className="career-info-in">
+                      <div className="career-role">
+                        <h4>{item.role}</h4>
+                        <h5>{item.company}</h5>
+                      </div>
+                      <h3>{item.timeline}</h3>
+                    </div>
+                    <p>{item.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
-            </p>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+        </div>
+        <div className="career-achievements">
+          <h3 className="career-block-title">Achievements</h3>
+          <div className="career-achievement-list">
+            {achievements.map((item, index) => (
+              <div className="career-achievement-card" key={`achievement-${index}`}>
+                <div className="career-role">
+                  <h4>{item.title}</h4>
+                  <h5>{item.org}</h5>
+                </div>
+                <p>{item.detail}</p>
               </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
-            </p>
+            ))}
           </div>
         </div>
       </div>

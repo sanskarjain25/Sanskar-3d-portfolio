@@ -5,32 +5,25 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Temporary Housing Directory",
+    category: "Property Management and Reservation Platform",
+    tools: "Angular, REST APIs, SPA Architecture, Form Validations",
+    image: "/images/THD.png",
+    link: "https://workflow.thdmail.net:8088/login",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "HomeTrak",
+    category: "Location-Aware Property Tracking Application",
+    tools: "Angular, TypeScript, Google Maps Integration",
+    image: "/images/HomeTrak.png",
+    link: "https://hometrak.thdmail.net/login",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "TKC Website",
+    category: "TechBairn Student Community Platform",
+    tools: "Student resources, events, and community engagement",
+    image: "/images/website.png",
+    link: "https://github.com/sanskarjain25/TechBairn-Student-Community-KIIT",
   },
 ];
 
