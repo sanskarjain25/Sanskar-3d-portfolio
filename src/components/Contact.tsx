@@ -7,27 +7,27 @@ const Contact = () => {
       <div className="contact-container">
         <h3>Contact</h3>
         <div className="contact-flex">
-          <div className="contact-box">
+          <div className="contact-box contact-box-connect">
             <h4>Connect</h4>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/sanskar-jain-21228a1b7/"
-                target="_blank"
-                rel="noreferrer"
-                data-cursor="disable"
-              >
-                LinkedIn - sanskar-jain-21228a1b7
-              </a>
-            </p>
-            <p>
-              <a
-                href="mailto:sanskarjain025@gmail.com"
-                data-cursor="disable"
-              >
-                sanskarjain025@gmail.com
-              </a>
-            </p>
-            <p>+91 7297973305</p>
+            <a
+              href="https://www.linkedin.com/in/sanskar-jain-21228a1b7/"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="disable"
+              className="contact-link"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:sanskarjain025@gmail.com"
+              data-cursor="disable"
+              className="contact-link"
+            >
+              sanskarjain025@gmail.com
+            </a>
+            <a href="tel:+917297973305" data-cursor="disable" className="contact-link">
+              +91 7297973305
+            </a>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
@@ -59,7 +59,7 @@ const Contact = () => {
               Instagram <MdArrowOutward />
             </a>
           </div>
-          <div className="contact-box">
+          <div className="contact-box contact-box-signoff">
             <h2>
               Designed and Developed <br /> by <span>Sanskar Jain</span>
             </h2>

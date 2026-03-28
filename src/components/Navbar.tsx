@@ -52,7 +52,7 @@ const Navbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          linkedin.com/in/sanskar-jain-21228a1b7
+          LinkedIn
         </a>
         <ul>
           <li>
