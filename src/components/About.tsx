@@ -6,11 +6,14 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am an Associate Software Engineer at Osmosys Software Solutions,
-          focused on building production-ready web applications with Angular,
-          TypeScript, and REST APIs. I enjoy solving product problems end to end
-          through clean UI, reliable backend integrations, and measurable
-          improvements in performance and user experience.
+          Frontend-focused Associate Software Engineer at Osmosys Software
+          Solutions, currently managing the UI team, guiding frontend
+          development, attending client calls, and mentoring developers. I build
+          scalable enterprise-grade web solutions with Angular, TypeScript,
+          HTML, CSS, Bootstrap, REST API integrations, and Generative AI
+          features, with a strong focus on usability, performance, and workflow
+          optimization across reservation, accounting, and property management
+          platforms.
         </p>
       </div>
     </div>

@@ -19,6 +19,12 @@ const workExperience = [
 
 const education = [
   {
+    role: "Generative AI for Professionals",
+    company: "Indian Institute of Technology (IIT), Patna",
+    timeline: "July 2026 - Present",
+    description: "Patna, Bihar, India.",
+  },
+  {
     role: "B.E. Computer Science",
     company: "KIIT University",
     timeline: "2020-24",
@@ -41,6 +47,12 @@ const education = [
 ];
 
 const achievements = [
+  {
+    title: "Annual Award (Garuda 2026)",
+    org: "Osmosys Software Solutions",
+    detail:
+      "Received the Annual Award (Garuda 2026) at Osmosys Software Solutions for outstanding contributions to the THD project.",
+  },
   {
     title: "Quarterly Excellence Award",
     org: "Osmosys Software Solutions",
